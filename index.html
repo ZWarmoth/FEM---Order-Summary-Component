@@ -7,46 +7,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"
     <title>Frontend Mentor - Order Summary Component</title>
 </head>
 <body>
-    <div class="container">
-        
-        <div class="top-img"></div>
+    <main>
+        <div id="container">
+           <div id="component-card"> 
+                <div id="top-img">
+                    <img src="./images/illustration-hero.svg" alt="man dancing with a music player">
+                </div>
 
-        <div class="order-summary-container">
+                <div id="order-summary-container">
 
-            <div class="summary-info">
-                <h1>Order Summary</h1>
-                <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anwhere you like!</p>
+                    <div id="summary-info">
+                        <h1>Order Summary</h1>
+                        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anwhere you like!</p>
+                    </div>
+
+                    <div id="annual-plan">
+                        <div>
+                            <img src="./images/icon-music.svg" alt="music icon">
+                        </div>
+
+                        <div class="plan-type">
+                            <h2>Annual Plan</h2>
+                            <p>$59.99/year</p>   
+                        </div>
+
+                        <a class="plan-btn" href="#">Change</a>
+                    
+                </div>
+                
+                <div id="payments">
+                    <button class="payment-btn">Proceed to Payment</button>
+                    <button class="cancel-btn">Cancel Order</button>
+                </div> 
+
+
+
+                
+                
             </div>
-
-            <div class="annual-plan">
-                <img>
-                <p><strong>Annual Plan</strong></p>
-                <p>$59.99/year</p>
-                <a href="#">Change</a>
-            </div>
-
-            <div class="payment-buttons">
-                <button id="payment">Proceed to Payment</button>
-                <button id="cancel">Cancel Order</button>
-
-            </div>
-
-
-
-            
         </div>
-
-
-
-
-
-
-
-
-
-    </div>
+    </main>
 </body>
 </html>

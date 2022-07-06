@@ -1,2 +1,162 @@
-/*font-family: 'Red Hat Display', sans-serif;
 
+:root {
+    --darkB: #1F2E55;
+    --lightB: #717FA6;
+    --lightP: #F7F9FF;
+    --brightB: #382AE1;
+    --brightP: #766CF1;
+
+}
+
+
+html,body,main {
+   height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: linear-gradient(#D6E1FF, #F2F2F2);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--darkB);
+    text-align: center;
+    margin: 45px 0px 10px 0px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--lightB);
+    text-align: center;
+    margin: 10px;
+}
+
+#order-summary-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#component-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 450px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.2);
+}
+
+
+#top-img img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+#annual-plan {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightP);
+    border-radius: 11px;
+    padding :20px;
+    margin: 10px 0;
+    gap: 2px;
+}
+
+.plan-type {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 2;
+    justify-content: center;
+    margin: 0px 20px;
+    gap: 2px;
+}
+
+.plan-type p {
+    text-align: left;
+    margin: 0;
+}
+
+.plan-btn {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--brightB);
+    margin: 16px 16px 15px 0
+}
+
+.plan-btn:hover {
+    color: var(--brightP);
+    text-decoration: none;
+}
+
+#payments {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 30px 0;
+}
+
+
+.payment-btn {
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    background-color: var(--brightB);
+    border-radius:11px;
+    height: 50px;
+    border: none;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0px 20px 15px rgba(56, 42, 225, 0.1903);
+    cursor: pointer;
+}
+
+.payment-btn:hover {
+    background-color: var(--brightP);
+}
+
+.cancel-btn {
+    font-weight: 700;
+    font-size: 15;
+    color: var(--lightB);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.cancel-btn:hover {
+    color:  var(--darkB);
+}
+
+
+@media (max-width: 450px) {
+    #component-card {
+        width: 100vw;
+    }
+}
